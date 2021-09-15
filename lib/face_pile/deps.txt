@@ -1,0 +1,4 @@
+The Face Pile workshop depends on:
+
+random_user: ^0.3.0
+transparent_image: ^2.0.0
