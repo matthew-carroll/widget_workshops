@@ -6,24 +6,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:random_user/random_user.dart';
 import 'package:transparent_image/transparent_image.dart';
+import 'package:widget_workshops/workshop_scaffold.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Face Pile | Widget Workshop',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const FacePileDemoScreen(),
-    );
-  }
+  runApp(
+    const WidgetWorkshopApp(
+      child: FacePileDemoScreen(),
+    ),
+  );
 }
 
 class FacePileDemoScreen extends StatefulWidget {
